@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:after, *:before {
+  box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+img {
+  width: 80%;
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+.headerNav {
+  max-width: 100%;
+  margin-bottom: 16px;
+}
+
+.headerNav .headerList {
+  height: 32px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.headerNav .headerList .childList {
+  background: rgba(17, 31, 66, 0);
+  padding-left: 5px;
+  padding-right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.headerNav .headerList .childListLogo {
+  background: rgba(17, 31, 66, 0);
+  padding-left: 5px;
+  padding-right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: STXingkai;
+}
+
+body {
+  background: url("./images/background3.jpg") no-repeat fixed center top;
+  background-size: cover;
+}
+
+.globalHeader {
+  margin: 20px;
+}
+
+.searchForm {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@media (min-width: 500px) {
+  body {
+    background: url("./images/background.jpg") no-repeat fixed center top;
+    background-size: cover;
+  }
+
+  .headerNav .headerList {
+    padding-right: 50px;
+    margin-top: 50px;
+  }
+
+  .searchForm {
+    margin-top: 100px;
+    justify-content: center;
+  }
+
+  .searchForm > input {
+    max-width: 400px;
+  }
+
+}
+
+.searchForm > input {
+  width: 100%;
+  margin-right: 10px;
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid white;
+  border-radius: 4px;
+  opacity: 60%;
+}
+
+.searchForm > button {
+  white-space: nowrap;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: rgba(5, 114, 149, 0.5);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+}
+
+.globalMain {
+  display: flex;
+  justify-content: center;
+}
+
+.siteList {
+  margin-top: 20px;
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.siteList > li {
+  margin-bottom: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.siteList .site {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border: none;
+  border-radius: 4px;
+  position: relative;
+  opacity: 80%;
+}
+
+@media (min-width: 500px) {
+  .globalMain {
+    display: flex;
+    justify-content: center;
+  }
+
+  .siteList {
+    width: auto;
+    max-width: 900px;
+    margin-top: 80px;
+    justify-content: flex-start;
+  }
+
+  .siteList .site {
+    cursor: pointer;
+  }
+
+  .siteList .addButton {
+    cursor: pointer;
+  }
+}
+
+.siteList .site .logo {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.siteList .site .link {
+  font-size: 10px;
+  margin-top: 2px;
+  display: flex;
+  justify-content: center;
+}
+
+.siteList .addButton {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border: none;
+  border-radius: 4px;
+  opacity: 80%;
+}
+
+.siteList .addButton .iconWrapper {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.siteList .addButton .iconWrapper .icon {
+  width: 56px;
+  height: 56px;
+  opacity: 80%;
+}
+
+.siteList .addButton .text {
+  margin-top: 2px;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.siteList .site .close {
+  position: absolute;
+  top: 2px;
+  right: 6px;
+  opacity: 80%;
+}
+
+@media (min-width: 500px) {
+  .siteList .site .close {
+    display: none;
+    cursor: default;
+  }
+
+  .siteList .site:hover .close {
+    display: block;
+  }
+
+  .searchForm > button {
+    cursor: pointer;
+  }
+}

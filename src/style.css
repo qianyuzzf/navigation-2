@@ -4,11 +4,13 @@
   box-sizing: border-box;
 }
 
-*:after, *:before {
+*:after,
+*:before {
   box-sizing: border-box;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -16,7 +18,6 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
 
 img {
   width: 80%;
@@ -63,7 +64,7 @@ img {
 }
 
 body {
-  background: url("./images/background3.jpg") no-repeat fixed center top;
+  background: url('./images/background3.jpg') no-repeat fixed center top;
   background-size: cover;
 }
 
@@ -80,7 +81,7 @@ body {
 
 @media (min-width: 500px) {
   body {
-    background: url("./images/background.jpg") no-repeat fixed center top;
+    background: url('./images/background.jpg') no-repeat fixed center top;
     background-size: cover;
   }
 
@@ -97,7 +98,6 @@ body {
   .searchForm > input {
     max-width: 400px;
   }
-
 }
 
 .searchForm > input {
@@ -189,6 +189,8 @@ body {
   margin-top: 2px;
   display: flex;
   justify-content: center;
+  word-break: break-all;
+  text-align: center;
 }
 
 .siteList .addButton {

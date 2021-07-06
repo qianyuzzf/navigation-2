@@ -48,7 +48,7 @@ const render = () => {
       <li>
         <div class="site">
           <div class="logo">
-            <img src=${hashMap[index].logo} alt="">
+            <img src=${hashMap[index].logo} onerror="this.src='https://www.baidu.com/favicon.ico'" alt="">
           </div>
           <div class="link">${simplifyUrl(node.url)}</div>
           <div class="close">

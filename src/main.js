@@ -4,8 +4,8 @@ const x = localStorage.getItem('x')
 const xObject = JSON.parse(x)
 const hashMap = xObject || [
   {
-    logo: 'https://www.timtadder.com/favicon.ico',
-    url: 'https://www.timtadder.com'
+    logo: 'https://echarts.apache.org/favicon.ico',
+    url: 'https://echarts.apache.org/'
   },
   {
     logo: 'https://qianduan.net/favicon.ico',
